@@ -1,0 +1,54 @@
+<ion-view view-title="Attendance">
+    <ion-nav-bar class="bar-balanced">		
+        <ion-nav-buttons side="left"> 
+			<button menu-toggle="left" class="button button-icon icon ion-navicon"></button> 
+			<a class="button button-clear icon-left ion-arrow-left-c" ng-click="myGoBack()"></a>
+		</ion-nav-buttons>
+        <ion-nav-buttons side="right"> <button class="button icon-right button-icon button-clear {{newdataindicator}}" ng-click="doRefresh()"></button>
+            <!--<a class="button icon-right button-icon button-clear ion-ios-pulse-strong blink ion-record"></a>--><button class="button icon-right button-icon button-clear ion-android-more-vertical" ng-click="openPopover($event)"> </button> </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content>
+		
+        <div class="card customcard">
+			<div class="row">
+				<div class="col-25 colleft item-input-inset">Place</div>
+				<div class="col-75 colright item-input-inset">
+					<select class="item-input-wrapper customselect" ng-model="attendance.attendancelocation" placeholder="Place">
+						<option ng-repeat="option in attendance.locations | orderBy:'name'" value="{{option.name}}">{{option.name}}</option>					
+					</select>
+				</div>				
+			</div>
+			<div class="row">
+				<div class="col-25 colleft item-input-inset">Date</div>
+				<div class="col-75 colright item-input-inset">
+					<input class="item-input-wrapper"  placeholder="Attendance Date" type="date" ng-model='attendance.attendancedate'>
+				</div>				
+			</div>
+			
+			<div class="button-bar">
+				<a class="icon button icon-left button-calm button-small" ng-click="generateattendance()">Get</a>
+				<a class="icon button  icon-left  button-energized button-small" ng-click="insertattendance()">Update</a>
+				<a class="icon button  icon-left  button-balanced button-small" ng-click="clear()">Clear</a>
+			</div>
+        </div>
+		<div class="">
+			<div class="row">
+                    <div class="col-66 colbold colheader">&nbsp;&nbsp;&nbsp;&nbsp;Group Name</div>
+                    <div class="col-33 colbold colheader">
+                      Present/Absent &nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
+			</div>
+        <ion-list>
+            <ion-item ng-repeat="item in groups | orderBy:'item.groupname' " class="customitem">
+				
+                <div class="row">
+                    <div class="col-66 ">{{item.groupname}}</div>
+                    <div class="col-33 ">
+                        <ion-checkbox ng-model="item.present" class="customitem"></ion-checkbox>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

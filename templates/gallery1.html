@@ -1,0 +1,21 @@
+<ion-view view-title="Gallery"> </ion-nav-bar>
+    <ion-nav-bar class="bar-balanced">
+        <ion-nav-buttons side="left"> <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+            <a class="button button-clear icon-left ion-arrow-left-c" ng-click="myGoBack()"></a>
+        </ion-nav-buttons>
+        <ion-nav-buttons side="right"> <button class="button icon-right button-icon button-clear {{newdataindicator}}" ng-click="doRefresh()"></button>
+            <!--<a class="button icon-right button-icon button-clear ion-ios-pulse-strong blink ion-record"></a>--><button class="button icon-right button-icon button-clear ion-android-more-vertical" ng-click="openPopover($event)"> </button> </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content >
+        <ion-slide-box>
+            <ion-slide ng-repeat="image in images">
+                <div class="container"  class="scrollCanvas">
+                    <ion-scroll class="scrollCanvas" zooming="true" min-zoom="1" direction="xy" locked="false">
+                        <div class="image" style="background-image: url( {{image}} )"></div>
+                    </ion-scroll>
+                </div>
+                <div>&nbsp;</div>
+            </ion-slide>
+        </ion-slide-box>
+    </ion-content>
+</ion-view>

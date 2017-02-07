@@ -1,0 +1,27 @@
+<ion-view view-title="About Us">
+<ion-nav-bar class="bar-balanced">		
+        <ion-nav-buttons side="left"> 
+			<button menu-toggle="left" class="button button-icon icon ion-navicon"></button> 
+			<a class="button button-clear icon-left ion-arrow-left-c" ng-click="myGoBack()"></a>
+		</ion-nav-buttons>
+        <ion-nav-buttons side="right"> <button class="button icon-right button-icon button-clear {{newdataindicator}}" ng-click="doRefresh()"></button>
+            <!--<a class="button icon-right button-icon button-clear ion-ios-pulse-strong blink ion-record"></a>--><button class="button icon-right button-icon button-clear ion-android-more-vertical" ng-click="openPopover($event)"> </button> </ion-nav-buttons>
+    </ion-nav-bar>
+    
+    <ion-content>
+        <div class="card customcard">
+               
+        <div class="title colcentered"><img src="img/abtus.png"></div>
+                    
+        </div>
+		
+    </ion-content>
+	<!-- <ion-footer-bar align-title="center" class="bar-balanced ">
+		           
+				<div class="title colcentered"><img src="img/logo-50px.png" > शेतकरी ते ग्राहक थेट विक्री!</div>
+		</ion-footer-bar> -->
+	<!-- <div class="bar bar-footer bar-positive">
+				<div><img src="img/logo-50px.png" ></div>
+					<div class="title">शेतकरी ते ग्राहक...   थेट विक्री!</div>
+	 </div> -->
+</ion-view>

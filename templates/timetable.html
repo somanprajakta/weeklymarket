@@ -1,0 +1,61 @@
+<ion-view view-title="Timetable">
+   <!-- </ion-nav-bar>-->
+	<ion-nav-bar class="bar-balanced">		
+        <ion-nav-buttons side="left"> 
+			<button menu-toggle="left" class="button button-icon icon ion-navicon"></button> 
+			<a class="button button-clear icon-left ion-arrow-left-c" ng-click="myGoBack()"></a>
+		</ion-nav-buttons>
+        <ion-nav-buttons side="right"> <button class="button icon-right button-icon button-clear {{newdataindicator}}" ng-click="doRefresh()"></button>
+            <!--<a class="button icon-right button-icon button-clear ion-ios-pulse-strong blink ion-record"></a>--><button class="button icon-right button-icon button-clear ion-android-more-vertical" ng-click="openPopover($event)"> </button> </ion-nav-buttons>
+    </ion-nav-bar>
+	<ion-header-bar class="bar bar-light bar-subheader item-input-inset ">	<!-- bar bar-light bar-subheader -->			
+		<label class="item-input-wrapper searchbackground white">
+			<a class="icon ion-ios-search placeholder-icon white" ng-click="clear()"></a>
+			<input type="search" placeholder="Search" ng-model="searchText" class="white">
+		</label>
+		<!-- <button class="button button-small">Group By</button> -->
+	</ion-header-bar>
+    <ion-content>
+        <!--
+			<div class="row">
+            <div class="col-20">&nbsp; &nbsp; &nbsp;Area</div>
+            <div class="col-10">&nbsp; &nbsp; Day</div>
+            <div class="col-20">&nbsp;&nbsp;Time</div>
+            <div class="col-50">Address</div>
+        </div>
+        <ion-list class="item-text-wrap">
+            <ion-item ng-repeat="item in timetable1">
+                <div class="row">
+                    <div class="col-20">{{item.name}}</div>
+                    <div class="col-10">{{item.day}}</div>
+                    <div class="col-20">{{item.time}}</div>
+                    <div class="col-50" style="wrap">{{item.address}}</div>
+                </div>
+            </ion-item>
+        </ion-list> -->
+		<ion-list class="">
+			<ion-item ng-repeat="entry in timetable1 | orderBy:day | filter:searchText" class="customback liitem" isOdd="{{$odd}}" >							
+				<div class="customdivider">
+					<div class="row item liitem customrow">									
+						<div class="col-33 colleft"><button class="icon ion-navigate positive" ng-click="showMap('{{entry.coord}}')">&nbsp;{{entry.name}}
+					</button></div>
+						<div class="col-33 colcentered">{{entry.day}}</div>
+						<div class="col-33 colright">{{entry.time}}</div>
+						
+					</div>
+				</div>
+				<div class="row item liitem">									
+					<div class="col" style="wrap">{{entry.address}}
+					
+					</div>
+						
+				</div>
+				
+			</ion-item>			
+		</ion-list>
+    </ion-content>
+    <div class="bar bar-footer bar-positive">
+        <div><img src="img/logo-50px.png"></div>
+        <div class="title"> शेतकरी ते ग्राहक... थेट विक्री!</div>
+    </div>
+</ion-view>

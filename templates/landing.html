@@ -1,0 +1,84 @@
+<ion-view view-title="Home">
+    <ion-nav-bar class="bar-balanced ">
+        <ion-nav-buttons side="left">
+            <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+			<a class="button button-clear icon-left ion-arrow-left-c" ng-click="myGoBack()"></a>
+        </ion-nav-buttons>
+        <ion-nav-buttons side="right">
+            <button class="button icon-right button-icon button-clear {{newdataindicator}}" ng-click="doRefresh()"></button>
+            <!--<a class="button icon-right button-icon button-clear ion-ios-pulse-strong blink ion-record"></a>-->
+            <button class="button icon-right button-icon button-clear ion-android-more-vertical" ng-click="openPopover($event)"> </button>
+
+        </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <ion-content>
+        <div class="card customcard">
+		 <div class="item-image"> <img src="img/landingimg.png"> </div>
+		<!--
+            <div class="row">
+                <div class="col">
+                    <a class="button button-positive button-block icon ion-clipboard" ng-click="gotopage('attendance')">
+                        <div class="">Attendance</div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="button button-block button-balanced icon ion-android-calendar" ng-click="gotopage('timetable')">
+                        <div class="">Time Table</div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a class="button button-energized button-block icon ion-information-circled" ng-click="gotopage('reportLanding')">                        
+                        <div class="">Reports</div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="button button-calm button-block icon ion-ios-albums" ng-click="gotopage('gallery1')">                        
+                        <div class="">Gallery</div>
+                    </a>
+                </div>
+            </div>            
+			-->
+			<div class="row">
+                <div class="col">
+                    <a class="button button-positive button-block icon ion-clipboard" ng-click="gotopage('attendance')">
+                        &nbsp;&nbsp;Attendance
+                    </a>
+                </div>
+			</div>
+			<div class="row">
+                <div class="col">
+                    <a class="button button-energized button-block icon ion-information-circled" ng-click="gotopage('reportLanding')">                        
+                       &nbsp;&nbsp;Reports
+                    </a>
+                </div>
+			</div>
+			<div class="row">
+                <div class="col">
+                    <a class="button button-block button-balanced icon ion-android-calendar" ng-click="gotopage('timetable')">
+                        &nbsp;&nbsp;Time Table
+                    </a>
+                </div>
+			</div>
+			<div class="row">
+                <div class="col">
+                    <a class="button button-calm button-block icon ion-ios-albums" ng-click="gotopage('gallery1')">            
+                        &nbsp;&nbsp;Gallery
+                    </a>
+                </div>
+			</div>
+			
+        </div>
+		
+    </ion-content>
+	<!-- <ion-footer-bar align-title="center" class="bar-balanced ">
+		           
+				<div class="title colcentered"><img src="img/logo-50px.png" > शेतकरी ते ग्राहक थेट विक्री!</div>
+		</ion-footer-bar> -->
+	<!-- <div class="bar bar-footer bar-positive">
+				<div><img src="img/logo-50px.png" ></div>
+					<div class="title">शेतकरी ते ग्राहक...   थेट विक्री!</div>
+	 </div> -->
+</ion-view>
