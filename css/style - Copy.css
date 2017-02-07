@@ -1,0 +1,404 @@
+/* Empty. Add your own CSS if you like */
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('../fonts/RobotoCondensed-Regular.ttf') format('truetype');
+    font-weight: 300;
+}
+.selected = {
+background:red;
+}
+body{
+
+font-family: 'Roboto Condensed'!important;
+}
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+.list-inset .item.item-input input, .item ,input,.button.button-calm{
+  
+  font-family: 'Roboto Condensed'!important;
+}
+/*
+ * http://docs.angularjs.org/api/ng/directive/ngShow#usage_animations
+ */
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+
+
+.customcol{
+font-size:10px;
+}
+.itemrow{
+background:beige;
+font-weight:bold;
+padding:0;
+font-size:12px;
+border: 1px solid lightgrey;
+border-radius:3px;
+}
+.row{
+	padding:0px;
+}
+.col,.row{
+
+}
+.item-content,.item-complex .item-content{
+padding:3px;
+}
+.itemrowchild{
+white-space:pre-wrap;
+padding:0;
+font-size:12px;
+border: 1px solid lightgrey;
+}
+.colright{
+text-align:right;
+}
+.colleft{
+text-align:left;
+
+}
+.colcentered{
+	text-align:center;
+}
+.colheader{
+	font-weight:bold;
+}
+.rowheader{
+	background:rgb(250,176,91); /*orange*/
+	background:rgb(148,215,232); /*blue*/
+	background:beige; /*blue*/
+	background:none;
+	font-weight:bold;
+}
+.item-complex.item-icon-right .item-content{
+padding-right:10px;
+padding-left:10px;
+}
+.fnt{
+/*font-size:12px;*/
+ font-family:sans-serif !important;
+}
+.colcenter{
+text-align:center;
+}
+.inputtext{
+border-width:1px;
+border-radius:3px;
+border-style:solid;
+border: 1px solid;
+}
+.custombackground,.container{
+background:beige;
+}
+.editwidth{
+width:80%;
+}
+
+.tab-item.tab-item-active{
+}
+.badgeright{
+right:0px !important;
+}
+.customdivider{
+
+background-color:#ffc900;
+background:rgb(159,182,66);
+background:rgb(255,255,128);
+background:gainsboro;
+font-size:14px;
+font-weight:bold;
+padding:0;
+/*border-bottom:solid gold 2px;*/
+}
+
+.customcard{
+background:gainsboro;
+}
+
+.float-button {
+ 
+background-color:#ef473a;
+opacity: 0.9;
+color: white;
+border-radius: 50%;
+/*border-radius:15% 0 0 0;*/
+width: 30px;
+padding: 25px;
+font-size: 40px;
+position: fixed;
+bottom: 5%; /* Adjust height */
+right: 5%; /* Adjust position */
+z-index: 1000;
+}
+ 
+.float-button .height_fix {
+  margin-top: 100%;
+  border: 1px solid red;
+}
+ 
+.float-button .content {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin-top: -20px;
+  color: white;
+}
+.customback{
+background:darkgrey;
+padding:10px;
+
+}
+.customitem{
+padding:4px;
+/*font-size:12px;*/
+}
+
+.required:after,.inputtext:after,.ion-asterisk:before{ 
+
+color:red;
+}
+
+.required,.inputtext{
+background: transparent !important;
+}
+
+/*.ion-android-mail:before ,.ion-android-list:before{
+color:beige;
+font-size:35px
+}
+.tabs-top.tabs-striped .tab-item.tab-item-active > i,.tab-title{
+
+font-weight:bold;
+font-size:14px;
+} */
+.imgcenter{
+ display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.slideout{
+position: absolute;
+    background: grey;
+    border: solid 1px #000;
+    z-index: 1001;
+    overflow: visible;
+}
+
+ion-popover-view.fit {
+  height: auto !important;
+}
+
+ion-popover-view.fit ion-content {
+  position: relative !important;
+}
+
+.platform-android ion-popover-view.fit {
+  margin-top: 10px !important;
+}
+
+input:disabled{
+    color:grey;
+}
+
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+.item{
+	font-size:14px;
+	padding:5px;
+	/*border:white;*/
+}
+.liitem{
+	font-size:14px;	
+	border:white !important;
+	/*padding:0px !important; 
+	/*background:rgb(240,247,239);*/
+}
+.col{
+	padding:5px;
+}
+.tabs-striped.tabs-positive .tab-item.tab-item-active
+{
+	border-color:gold;
+}
+.button.button-energized{
+	color:black;
+	font-weight:bold;
+}
+.input-label{
+	/*font-size:12px;*/
+}
+.custombutton{
+	/*background:gainsboro;*/
+	min-height:0;
+	line-height:0;
+}
+.colbold{
+	font-weight:bold;
+}
+
+@keyframes blink {  
+  0% { color: white; }
+100% { color: #ffc900; }
+}
+@-webkit-keyframes blink {
+	0% { color: white; }
+	100% { color: red; }
+}
+.blink {
+  -webkit-animation: blink 1s linear infinite;
+  -moz-animation: blink 1s linear infinite;
+  animation: blink 1s linear infinite;
+} 
+
+@keyframes blinkbutton {  
+  0% { color: orange; }
+100% { color: red; }
+}
+@-webkit-keyframes blinkbutton {
+	0% { color: white; }
+	100% { color: red; }
+}
+.blinkbutton {
+  -webkit-animation: blink 1s linear infinite;
+  -moz-animation: blink 1s linear infinite;
+  animation: blinkbutton 1s linear infinite;
+} 
+
+.alerticon{
+	background:none;
+}
+.alertrow{
+		background:orange;
+}
+.newrow{
+		background:lightyellow;
+}
+
+.col-30 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 30%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 30%;
+  -ms-flex: 0 0 30%;
+  flex: 0 0 30%;
+  max-width: 30; }
+  
+  .col-40 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 40%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 40%;
+  -ms-flex: 0 0 40%;
+  flex: 0 0 40%;
+  max-width: 40; }
+  
+  .col-70 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 70%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 70%;
+  -ms-flex: 0 0 70%;
+  flex: 0 0 70%;
+  max-width: 70; }
+  
+    .col-35 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 35%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 35%;
+  -ms-flex: 0 0 35%;
+  flex: 0 0 35%;
+  max-width: 35; }
+  
+    .col-5 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 5%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 5%;
+  -ms-flex: 0 0 5%;
+  flex: 0 0 5%;
+  max-width: 5; }
+  
+.ui-icon-arrow-debrief{
+background-image: url("../img/Debrie.png") !important;
+width: 36px;
+height: 36px;
+background-repeat: repeat;
+/*border-radius: 32px;
+/*background:#387ef5 !important;*/
+background:transparent;
+vertical-align:middle;
+}
+
+.customselect{
+	min-width:200px;
+	max-width:200px;
+}
+
+.selected{
+	background:green;
+}
+
+.bar.bar-positive{
+	background:rgb(100,198,197);
+	background:rgb(82,63,109);
+}
+.red{
+		color:red;
+}
+.searchbackground{
+	/*background:black;
+	color:white;*/
+}
+.white{
+	/*color:white !important;*/
+}
+
+.bar.bar-light{
+	/*background:black;*/
+}
+.green{
+		background:lightgreen;
+}
+
+.blue{
+		background:lightblue;
+}
+
+.detitem{
+	border:1px solid #ddd;
+	top:5px;
+	border-radius:5px;
+}
+
+
+
+ion-item[isOdd='false'] > .customdivider{
+	background-color: beige !important;
+}

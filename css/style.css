@@ -1,0 +1,84 @@
+/* Empty. Add your own CSS if you like */
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('../fonts/RobotoCondensed-Regular.ttf') format('truetype');
+    font-weight: 300;
+}
+.selected = {
+background:red;
+}
+body{
+
+font-family: 'Roboto Condensed'!important;
+}
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+.list-inset .item.item-input input, .item ,input,.button.button-calm{
+  
+  font-family: 'Roboto Condensed'!important;
+}
+ion-popover-view.fit {
+  height: auto !important;
+}
+
+ion-popover-view.fit ion-content {
+  position: relative !important;
+}
+
+.platform-android ion-popover-view.fit {
+  margin-top: 10px !important;
+}
+.colright{
+text-align:right;
+}
+.colleft{
+text-align:left;
+
+}
+.colcentered{
+	text-align:center;
+}
+.colheader{
+	font-weight:bold;
+}
+
+.customitem{
+	border:none !important;
+}
+
+.customselect{
+	border:0;
+	height:34px;
+}
+
+.customcard{
+background:gainsboro;
+}
+
+
+.container{
+	background-color: grey;
+}
+
+.scrollCanvas{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.image{
+  	width: 100%;
+  	height: 600px;
+  	background-size: contain;
+  	background-repeat: no-repeat;
+  	background-position: center, center;
+}
+.colbold{
+	background:beige;
+	
+}
+.customrow{
+	background:beige;
+	
+}
